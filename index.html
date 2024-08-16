@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Pricing</h1>
+            <label class="switch-button" for="switch">
+                <div class="switch-outer">
+                    <input id="switch" type="checkbox">
+                    <div class="button" id="toggle-theme">
+                        <span class="button-toggle"></span>
+                        <span class="button-indicator"></span>
+                    </div>
+                </div>
+            </label>
+        </header>
+        <section class="pricing">
+            <div class="pricing-plan">
+                <h2>API Plan</h2>
+                <p class="price">$0.002/month</p>
+                <ul>
+                    <li> API-Open AI</li>
+                    <li> Model-GPT-3.5</li>
+                </ul>
+                <button class="signup-btn">Buy Now</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>API Plan</h2>
+                <p class="price">$0.03/month</p>
+                <ul>
+                    <li>API-Open AI</li>
+                    <li>Model-GPT-4</li>
+                </ul>
+                <button class="signup-btn">Buy Now</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>API Plan</h2>
+                <p class="price">$0.08/month</p>
+                <ul>
+                    <li> API-Together AI</li>
+                    <li> Model-Llama-2-70b</li>
+                </ul>
+                <button class="signup-btn">Buy Now</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>API Plan</h2>
+                <p class="price">$0.06/month</p>
+                <ul>
+                    <li> API-Together AI</li>
+                    <li> Model-Llama-2-13b</li>
+                </ul>
+                <button class="signup-btn">Buy Now</button>
+            </div>
+        </section>
+
+        <div class="textsection">
+        <div class="text">
+            <p class="p" >Token Estimation</p> 
+            <p style="padding-top: 5px;" >On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.</p>
+        </div>
+        <div class="sectext">
+            <p class="secp" >Billing</p>
+            <p>You will only be charged for the tokens used in generating the book. The API tracks token usage and bills accordingly. Detailed usage reports are available in your account dashboard.</p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

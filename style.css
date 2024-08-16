@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f172a;
+    color: white;
+
+}
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    border-radius: 22px;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    background-color: #1e293b;
+     color: #a5b4fc; 
+}
+header button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;border-radius: 22px;
+
+}
+.textsection{
+    border: 1px solid #334155;
+    margin-top: 21px;
+    padding: 20px 10px;
+    background-color: #1e293b;
+    border-radius: 22px;
+}
+.textsection .text .p{
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: #a5b4fc;
+}
+.textsection .sectext .secp{
+    font-size: 1.17rem;
+    font-weight: bold;
+    padding: 5px 0px;
+    color: #a5b4fc;
+}
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border: 1px solid #334155;
+    padding: 20px 0px;
+    background-color: #1e293b;
+    border-radius: 22px;
+}
+.pricing-plan {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 22px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+    color: black;
+    
+}
+.pricing-plan:hover{
+ background-color: #8c8ed9 !important ;
+ color: white;
+ box-shadow: 0px 4px 8px 0px #8c8ed9, 0px -4px 8px 0px #8c8ed9, 4px 0px 8px 0px #8c8ed9, -4px 0px 8px 0px #8c8ed9;
+ border-color: transparent;
+ outline: none;
+}
+.pricing-plan h2 {
+    margin-top: 0;
+}
+.price {
+    font-size: 21px;
+    color:black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+ul li {
+    margin: 10px 0;
+}
+.signup-btn {
+    background-color:#6366f1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #ddd;
+}
+
+body.dark-mode .pricing-plan {
+    background: #444;
+    color: white;
+    border: 2px solid white;
+}
+body.dark-mode .price {
+    color: #fff;
+}
+.switch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px; 
+  }
+  .switch-button .switch-outer {
+    height: 100%;
+    width: 97px; 
+    background: #252532;
+    border-radius: 165px;
+    box-shadow: inset 0px 5px 10px 0px #16151c, 0px 3px 6px -2px #403f4e;
+    border: 1px solid #32303e;
+    padding: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .switch-button .switch-outer input[type="checkbox"] {
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+  }
+  .switch-button .switch-outer .button-toggle {
+    height: 29px; 
+    width: 29px;
+    background: linear-gradient(#3b3a4e, #272733);
+    border-radius: 100%;
+    box-shadow: inset 0px 5px 4px 0px #424151, 0px 4px 15px 0px #0f0e17;
+    position: relative;
+    z-index: 2;
+    transition: left 0.3s ease-in;
+    left: 0;
+    top: 1px;
+  }
+  .switch-button .switch-outer input[type="checkbox"]:checked + .button .button-toggle {
+    left: 58%; 
+  }
+  .switch-button .switch-outer input[type="checkbox"]:checked + .button .button-indicator {
+    animation: indicator 1s forwards;
+  }
+  .switch-button .switch-outer .button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  .switch-button .switch-outer .button-indicator {
+    height: 25px; 
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 3px solid #ef565f;
+    box-sizing: border-box;
+    right: 10px;
+    position: relative;
+  }
+  @keyframes indicator {
+    30% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      border: 3px solid #60d480;
+      left: -68%;
+    }
+  }
+  .dark-mode body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .dark-mode .switch-outer {
+    background: #1e1e1e;
+    border: 1px solid #444;
+  }
+  .dark-mode .button-toggle {
+    background: linear-gradient(#505050, #303030);
+  }
+  .dark-mode .button-indicator {
+    border: 3px solid #ef565f;
+  }
+  
